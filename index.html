@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="css/css.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media_query.css" />
-    <link rel="stylesheet" href="font_awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="library/font_awesome/css/font-awesome.min.css" />
   </head>
   <body>
     <div class="main_wrap" id="main_wrap_container">
@@ -542,6 +542,39 @@
 
                         </div>
 
+                        <div class="section_data_table">
+
+                        </div>
+
+                        <div class="section_charts">
+                            <div class="sales_chart_width">
+                                <div class="chart_title">
+                                    <div class="flex_grow_1">
+                                        <p class="fontfamilytitle ">Total Sales</p>
+                                    </div>
+                                    <a href="#" class="total_sales_download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                    <a href="#" class="total_sales_fullscreen"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                                </div>
+                                     <div id="sales_chart"></div>
+                                     
+                            </div>
+                            <div class="av_sales_chart_width">
+                               
+                                
+                                    <div class="chart_title">
+                                        <div class="flex_grow_1">
+                                            <p class="fontfamilytitle ">Average Sales Increase</p>
+                                        </div>
+                                        <a href="#" class="av_sales_download"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        <a href="#" class="av_sales_fullscreen"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                                    </div>
+                                        <div id="sales_average"></div>
+                            </div>
+
+                        </div>
+
+                        
+
                         </div>
                     </div>
                     <div class="footer_wrap" >
@@ -564,6 +597,18 @@
     <script src="js/notifications.js"></script>
     <script src="js/document_click.js"></script>
     <script src="js/fullscreen.js"></script>
+
+    <!-- For total Sales yearly -->
+    <script src="library/highchart/highcharts.js"></script>
+    <script src="library/highchart/series-label.js"></script>
+    <script src="library/highchart/exporting.js"></script>
+    <script src="library/highchart/export-data.js"></script>
+    <script src="library/highchart/accessibility.js"></script>
+    <!-- Addon for Average Sale -->
+    <script src="library/highchart/highcharts-more.js"></script>
+    
+    <script src="js/sales_chart.js"></script>
+    <script src="js/sales_average.js"></script>
     
     
   </body>
