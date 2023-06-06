@@ -567,3 +567,37 @@ ul.dashboard_child_nav{
     font-weight: bold;
     color: #898585;
 }
+
+.section_charts{
+    /* display: grid; */
+    /* grid-template-columns: 65% 35%; */
+    margin-top: 15px;
+    gap: 10px;
+    display:flex;
+    
+}
+
+.chart_title{
+    display: flex;
+    gap: 10px;
+    padding: 8px 5px;
+    font-size: 16px;
+    background: linear-gradient(-60deg, rgb(138, 185, 255) 40%, rgb(69, 103, 178) 60%);
+    color: #fff;
+}
+
+.chart_title .total_sales_download, .chart_title .av_sales_download{
+    color: #fff;
+}
+
+.chart_title .total_sales_fullscreen, .chart_title .av_sales_fullscreen{
+    color: #fff;
+}
+
+.sales_chart_width{
+    flex-basis: 65%;
+}
+
+.av_sales_chart_width{
+    flex-basis: 35%;
+}
